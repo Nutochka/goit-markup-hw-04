@@ -11,41 +11,45 @@
 </head>
 <body class="page">
     <div class="container-header">
-        <header class="links header">
-            <nav class="main-nav">
-                <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
-                <ul class="list nav header">
-                    <li><a href="./index.html" class="list-nav link current">Студія</a></li>
-                    <li><a href="./portfolio.html" class="list-nav link">Портфоліо</a></li>
-                    <li><a href="" class="list-nav link">Контакти</a></li>
+        <div class="holder-header">
+            <header class="links header">
+                <nav class="main-nav">
+                    <a href="./index.html" class="logo link"><span>Web</span>Studio</a>
+                    <ul class="list nav header">
+                        <li><a href="./index.html" class="list-nav link current">Студія</a></li>
+                        <li><a href="./portfolio.html" class="list-nav link">Портфоліо</a></li>
+                        <li><a href="" class="list-nav link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="list contacts">
+                    <li class="holder-contacts">
+                        <a href="mailto:info@devstudio.com" class="contacts link header">
+                            <svg class="icon-mail" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                            </svg>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="holder-contacts-phone">
+                        <a href="tel:+380961111111" class="contacts link header">
+                            <svg class="icon-phone" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="list contacts">
-                <li class="holder-contacts">
-                    <svg class="icon-mail" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
-                    </svg>
-                    <a href="mailto:info@devstudio.com" class="contacts link header">
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="holder-contacts-phone">
-                    <svg class="icon-phone" width="10" height="16">
-                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                    </svg>
-                    <a href="tel:+380961111111" class="contacts link header">+38 096 111 11 11</a>
-                </li>
-            </ul>
-        </header>
+            </header>
+        </div>
     </div>
+    
     <main>
-        <!--блок-герой-->
-        <div class="container-hero">
-            <section class="section hero">
+        <section class="section hero">
+            <div class="container-hero">
                 <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="button primary order">Замовити послугу</button>
-            </section>
-        </div>
+            </div>
+        </section>
         <!--перелік переваг-->
         <div class="container-advantages">
             <section class="section">
@@ -101,8 +105,9 @@
             </section>
         </div>
         <!--Наша команда-->
-        <div class="container-team">
-            <section class="section team">
+        
+        <section class="section team">
+            <div class="container-team">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="list team">
                     <li class="cards-team">
@@ -214,8 +219,8 @@
                         </ul>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
         <div class="container-regulars">
             <section class="section regulars">
                 <h2 class="section-title">Постійні клієнти</h2>

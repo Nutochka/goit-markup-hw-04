@@ -61,10 +61,14 @@ ul {
   /*--------------- HEADER ------------------*/
 
 .container-header {
+    width: 100%;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.holder-header {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -75,7 +79,7 @@ ul {
     display: flex;
     min-width: 307px;
 }
-
+/*-----------------------*/
 .holder-contacts {
     display: flex;
     align-items: center;
@@ -84,6 +88,13 @@ ul {
 .holder-contacts:hover,
 .holder-contacts:focus {
     color: var(--accent-color);
+    stroke: var(--accent-color);
+}
+
+.contacts.link.header:hover,
+.contacts.link.header:focus {
+    color: var(--accent-color);
+    stroke: var(--accent-color);
 }
 
 .holder-contacts-phone {
@@ -95,23 +106,24 @@ ul {
 .holder-contacts-phone:hover,
 .holder-contacts-focus:hover {
     color: var(--accent-color);
+    stroke: var(--accent-color);
 }
-
+/*-------------------------*/
 .icon-mail,
 .icon-phone {
     margin-right: 10px;
     fill: var(--primary-text-color);
 }
 
-.icon-mail:hover,
+/* .icon-mail:hover,
 .icon-mail:focus {
     fill: currentColor;
-}
+} */
 
-.icon-phone:hover,
+/* .icon-phone:hover,
 .icon-phone:focus {
     fill: currentColor;
-}
+} */
 
 .logo {
     font-family: 'Raleway';
@@ -142,7 +154,7 @@ footer .logo {
 }
 
 .links.header a {
-    padding: 32px 0;
+    padding: 24px 0 25px 0;
 }
 
 .links .logo {
@@ -189,12 +201,10 @@ footer .logo {
 
 /*------------------------- HERO --------------------------*/
 
-.container-hero {
-    width: 1600px;
+.section.hero {
+    width: 100%;
     margin: 0 auto;
     padding: 0 15px;
-
-
     flex-grow:1;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -212,13 +222,13 @@ footer .logo {
     text-align: center;
 }
 
-.section.hero {
+.container-hero {
     letter-spacing: 0.06em;
     padding: 200px 0 200px 0;
     text-align: center;
 }
 
-.section.hero h1 {
+.container-hero h1 {
     margin: auto;
     margin-bottom: 30px;
 }
@@ -276,7 +286,7 @@ footer .logo {
 
 /*----------------------- TEAM -----------------------------*/
 
-.container-team {
+/* .container-team {
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
@@ -289,6 +299,19 @@ footer .logo {
     background-color: var(--section-background-color);
     padding-left: 215px;
     padding-right: 215px;
+} */
+
+.container-team {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-size: 100%;
+}
+
+.section.team {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--section-background-color);
 }
 
 .section.team .section-title {
@@ -302,10 +325,7 @@ footer .logo {
 
 .list.team {
     display:flex;
-}
-
-.list.team li:not(:last-child) {
-    margin-right: 10px;
+    gap: 30px;
 }
 
 .holder-social-icons {
@@ -363,11 +383,6 @@ footer .logo {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-}
-
-.title-portfolio:hover,
-.title-portfolio:focus {
-    color: var(--accent-color);
 }
 
 .list {
@@ -463,20 +478,13 @@ footer .logo {
 
 .contacts.link.header {
     color: var(--primary-text-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
 }
 
 .list.contacts li:not(:last-child) {
-    margin-right: 50px;
-}
-
-.contacts.link.header:hover,
-.contacts.link.header:focus {
-    color: var(--accent-color);
-}
-
-.contacts:hover,
-.contacts:focus {
-    color: var(--accent-color);
+    margin-right: 30px;
 }
 
 /*------------------------ EXAMPLES ----------------------*/
@@ -571,7 +579,6 @@ footer .logo {
     width: 1600px;
     margin: 0 auto;
     padding: 60px 0 60px 215px;
-    background-color: var(--secondary-background-color);
     display: flex;
 }
 
@@ -640,4 +647,11 @@ footer .logo {
 .icon-social:hover,
 .icon-social:focus {
     fill: inherit;
+}
+
+.links.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: var(--secondary-background-color);
 }
