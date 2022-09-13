@@ -648,10 +648,6 @@ footer .logo {
     margin-right: 0;
 }
 
-/* .container-footer .list li:not(:last-child) {
-    margin-bottom: 9px;
-} */
-
 .container-footer .join-title {
     text-transform: uppercase;
     color: var(--secondary-text-color);
@@ -672,6 +668,7 @@ footer .logo {
 
 .list.social {
     display: flex;
+    justify-content: center;
     align-items: flex-start;
     gap: 10px;
 }
