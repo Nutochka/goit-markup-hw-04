@@ -381,7 +381,6 @@ footer .logo {
 .icon-social-links {
     display: block;
     justify-content: center;
-    margin: auto;
     fill: #AFB1B8;
 }
 
@@ -649,9 +648,9 @@ footer .logo {
     margin-right: 0;
 }
 
-.container-footer .list li:not(:last-child) {
+/* .container-footer .list li:not(:last-child) {
     margin-bottom: 9px;
-}
+} */
 
 .container-footer .join-title {
     text-transform: uppercase;
@@ -673,6 +672,7 @@ footer .logo {
 
 .list.social {
     display: flex;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -686,21 +686,9 @@ footer .logo {
     border-radius: 50%;
 }
 
-/* .icon-holder:hover,
-.icon-holder:focus {
-    background-color: var(--accent-color);
-    fill: var(--secondary-text-color);
-    border-radius: 50%;
-} */
-
-/* .icon-holder:not(:last-child) {
-    margin-right: 10px;
-} */
-
 .icon-social {
     display: flex;
     justify-content: center;
-    margin: auto;
 }
 
 /* .icon-social:hover,
